@@ -1,6 +1,6 @@
-To Do implement this template as a giter8 template https://github.com/foundweekends/giter8
 
-# cordova-plugin-*******
+
+# cordova-plugin-blank
 intended to be downloaded, not forked.
 
 replace all instances of ******* with the appropriate replacement

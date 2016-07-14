@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="*******dash-seperated-id*******"
+        version="1.0.0">
+    <name>*******CapitalizedPluginName*******</name>
+    <description>*******Plugin description *******</description>
+    <license>MIT</license>
+    <keywords>*******comma,seperated,key,words*******</keywords>
+    <js-module src="www/*******web_interface_name*******.js" name="*******native_interface_name*******">
+        <clobbers target="*******global.name.thatGets.clobbered.atRuntime*******"/>
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="*******native_interface_name*******">
+                <param name="android-package" value="*******full.package.path.to.plugin*******"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/*******native_interface_name*******.java" target-dir="src/where/to/put/file"/>
+    </platform>
+
+<platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="*******native_interface_name*******">
+                <param name="ios-package" value="*******native_interface_name*******"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/*******native_interface_name*******.swift"/>
+    </platform>
+</plugin>
